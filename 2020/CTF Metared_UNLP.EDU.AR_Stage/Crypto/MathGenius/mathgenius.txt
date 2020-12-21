@@ -1,0 +1,9 @@
+def challenge():
+    flag = open("flag.txt").read()
+    arr = []
+    for char in flag:
+        r= random.randint(4, 5345346346435)
+        r = r - 17+17+17
+        arr.append(str(r * ord(char)))
+
+    send_to_client("[{}]\n".format(",".join(arr)).encode())
