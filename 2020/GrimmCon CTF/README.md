@@ -1,4 +1,4 @@
-# URSA MINOR
+# # URSA MINOR
 > [ursa_minor.py](ursa_minor.py)
 
 ## Solution
@@ -99,3 +99,39 @@ if __name__ == "__main__":
 ```
 ## Flag
 > **flag{60c8184f8e96fe12409788cef3ce09a3}**
+
+# # Odysseus
+> `nc challenge.ctf.games 31692`
+
+## Solution
+DES weak key attack!
+
+```py
+from pwn import *
+
+keys = open('keys.txt').read().strip().split('\n')
+
+for k in keys:
+	# nc challenge.ctf.games 31692
+	r = remote("challenge.ctf.games",  31692)
+	r.recv()
+	# print(r.recv())
+	r.sendline(k)
+	
+	# try:
+	enc = r.recv().decode().strip()[1:]
+	dec = bytes.fromhex(enc)
+	# print("[+] Encoded: ", enc)
+	# print("[+] Decoded: ", dec)
+
+	if b"flag" in dec:
+		print("\n[*] Key: ", k)
+		print("[*] Decoded: ", dec)
+		exit(1)
+
+# [*] Key:  FE1FFE1FFE0EFE0E 
+# [*] Decoded:  b'flag{9b9169ac15fe51e8f337bc2786e4fb36}\n\n\n\n\n\n\n\n\n\n'
+
+```
+## Flag
+> **flag{9b9169ac15fe51e8f337bc2786e4fb36}**
