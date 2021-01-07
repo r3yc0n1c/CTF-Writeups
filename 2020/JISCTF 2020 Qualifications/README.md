@@ -43,6 +43,8 @@ print(dec.decode())
 
 ## Solution
 ```py
+#!/usr/bin/env python3
+
 file = open("flag.enc").read().strip()
 
 k = []
