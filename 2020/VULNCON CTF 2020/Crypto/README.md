@@ -1,4 +1,4 @@
-# `Double (100)`
+# `# Double (100)`
 > Is it Double Encoding? <br>
 > 6fp5ou50v5uj3x35gu4p456g4p15tv5wk5gu5b35gz4p44vm53x
 
@@ -8,7 +8,7 @@ After googling a lot, I found it finally!!!  [Twin-Hex Cypher Encoder/Decoder](h
 ## Flag
 > vulncon{Twin_Hex_Encoding_is_Hard}
 
-# `Go On Date? (100)`
+# `# Go On Date? (100)`
 > Here is your cipher! <br>
 > Flag Format: vulncon{decoded_string_with_underscore} <br>
 > `ddve uhkft fkpjet enfqdknis`
@@ -24,7 +24,7 @@ After googling a lot, I found it finally!!!  [Twin-Hex Cypher Encoder/Decoder](h
 ## Flag
 > vulncon{date_shift_cipher_encodings}
 
-# `PollMor (100)`
+# `# PollMor (100)`
 > Morphy wanted to study about "Index of coincidence" so she went to Dcode University near searchbar Playstation. Professor PollMor gave her a critical assignment to complete before VULNCON CTF ends. Help Her to complete the assignment and get the flag :) <br>
 > Flag Format: vulncon{words_seperated_by_underscore} <br>
 > [Chall file](PollMor_cipher.txt)
@@ -40,7 +40,7 @@ V U L N C O N P 0 L L U X 4 N D M 0 R S E A R 3 B R 0 T H 3 R S
 > vulncon{p0llux_4nd_m0rse_ar3_br0th3rs}
 
 
-# `can_you_c_the_password? (100)`
+# `# can_you_c_the_password? (100)`
 > Decrypt the password and submit it as the flag! <br>
 > [Chall file](cpass.zip)
 
@@ -119,7 +119,7 @@ vulncon{s3cur1ty_h4s_3volv3d_s0__much}
 ## Flag
 > vulncon{s3cur1ty_h4s_3volv3d_s0__much}
 
-# `diffeRent_but_SimilAr (436)`
+# `# diffeRent_but_SimilAr (436)`
 > A Diva challenged me if I can crack an encryption algorithm that she knows in and out! Can you help me crack the algorithm? <br>
 > [Chall file](rsa.zip)
 
@@ -218,3 +218,6 @@ So we can get the zip password from here and get the flag from the zip.
 
 ## Flag
 > vulncon{man1@C_L!k35_s@g3}
+
+## Ref
+* [Polynomial based RSA - DiVA Portal](http://www.diva-portal.se/smash/get/diva2:823505/FULLTEXT01.pdf)
