@@ -3,6 +3,18 @@
 > [:arrow_down: chall.py](chall.py)
 
 # Solution
+The main challenge here is calculating **l = pow(2, pow(2, t), n)** because the exponentiation is really slow as **pow(2, t)** gets bigger.
+
+Now if we manage to find **&Phi;(n)** (The Euler's Totient) then we can use [Euler's theorem](https://en.wikipedia.org/wiki/Euler%27s_theorem),
+
+<p align="center">	
+	x  &nbsp; &Xi; &nbsp; y (mod &Phi;(n)) <br>
+	a<sup>x</sup> &nbsp; &Xi; &nbsp; a<sup>y</sup> (mod n) <br><br>	
+	And we will have, <br><br>
+	x = 2<sup>t</sup> mod &Phi;(n) <br>
+	l = 2<sup>x</sup> mod n	
+</p>
+
 ### Solve Script: [apex.py](apex.py)
 ```py
 #!/usr/bin/env python3
