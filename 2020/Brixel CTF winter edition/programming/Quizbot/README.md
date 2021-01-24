@@ -22,7 +22,7 @@ which has all the question answers (tested manually for a couple of questions). 
 Now, we just need the parser!
 
 ## Crafting the Parser
-The best idea that came to my mind was **python** for it's amazing module called **requests*. Here's a sneak peek!
+The best idea that came to my mind was **python** for it's amazing module called **requests**. Here's a sneak peek!
 ```py
 import requests
 import re
