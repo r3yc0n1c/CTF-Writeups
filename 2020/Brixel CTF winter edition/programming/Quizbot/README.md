@@ -6,7 +6,7 @@
 So they set up a Quizbot with a hint **`Can you beat the 1000 questions?`** which tells us that maybe we can get a reward if we manage to answer all the 1000
 questions the Bot is going to ask us!
 
-Without waisting any time I jumped into the Source code. This was fairly simple so I checked the cookies and got the **`PHPSESSID`** is set!
+Without wasting any time I jumped into the Source code. This was fairly simple so I checked the cookies and got the **`PHPSESSID`** is set!
 
 ## The Synergy
 ### First
@@ -64,7 +64,7 @@ while score!=1001:
 Now I have the parser but I ran into some weird problems!
 
 ## The Final Call
-Basically my scriipt worked fine for ~600 questions and then it stopped! After debuging a lot I figured out that there were two issues,
+Basically my script worked fine for ~600 questions and then it stopped! After debugging a lot I figured out that there were two issues,
 * My Internet was shitty.
 * The Bot Server was down.
 * The Query text had some weird double spaces and Unicode chars.
