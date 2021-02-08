@@ -61,6 +61,6 @@ for m in c:
         print(dec)
 
 # flag{d0nt_h4v3_4n_3v3n_3_175_34sy!!!}
+```
 
 Solve script - [apex.py](apex.py)
-```
