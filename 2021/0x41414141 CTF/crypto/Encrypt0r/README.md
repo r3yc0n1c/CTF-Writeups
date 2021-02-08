@@ -95,5 +95,6 @@ print(f"\n[+] Flag: {flag}")
 ### Note
 This can also be achived by using **-1** as the post already mentioned earlier. I implemented it too and got correct result.
 
+Test script - [analyse.py](analyse.py)
 Solve script - [apex1.py](apex.py)
 
