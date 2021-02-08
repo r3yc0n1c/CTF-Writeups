@@ -1,5 +1,6 @@
 # Unimplemented (100)
-> A new publickey encryption algorithm is being invented, but the author is not quite sure how to implement the decryption routine correctly. Can you help him?
+> A new publickey encryption algorithm is being invented, but the author is not quite sure how to implement the decryption routine correctly. Can you help him? <br>
+> :arrow_down:  [unimplemented.py](unimplemented.py)
 
 ## Solution
 After googling a lot about "Gaussian Integers" and "RSA" I found - [Modified RSA in the Domains of Gaussian Integers and Polynomials Over Finite Fields](https://www.researchgate.net/publication/220922838_Modified_RSA_in_the_Domains_of_Gaussian_Integers_and_Polynomials_Over_Finite_Fields)
