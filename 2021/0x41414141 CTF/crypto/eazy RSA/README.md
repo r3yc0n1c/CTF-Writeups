@@ -14,7 +14,7 @@ then it becomes similar to [Rabin cryptosystem](https://en.wikipedia.org/wiki/Ra
 
 *The message **m** can be recovered from the ciphertext **c** by taking its square root modulo n as follows.*
 
-In this case we can recover **m** by repeatedly taking its square root modulo n as follows,
+In this case we can recover **m** by repeatedly taking ciphertext's (c) square root modulo n as follows,
 
 ```py
 from Crypto.Util.number import *
