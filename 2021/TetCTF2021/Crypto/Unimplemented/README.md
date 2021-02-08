@@ -17,6 +17,10 @@ Thus, the  value  of φ  for  any  Gaussian  integer  β can be obtained from th
 
 Solve Script - [apex.py](apex.py)
 
+## Flag
+> `TetCTF{c0unt1ng_1s_n0t_4lw4ys_34sy-vina:*100*48012023578024#}`
+
+
 ## Other Resources
 * [Crypto CTF 2019 / Complex RSA](https://sectt.github.io/writeups/CryptoCTF19/crypto_complexrsa/README)
 * [Crypto CTF 2019 / Complex RSA - by Ariana1729](https://github.com/Ariana1729/CTF-Writeups/blob/master/2019/CryptoCTF/Complex%20RSA/README.md)
