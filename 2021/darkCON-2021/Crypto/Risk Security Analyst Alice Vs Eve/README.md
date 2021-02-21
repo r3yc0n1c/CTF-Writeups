@@ -3,7 +3,7 @@
 > It was her first day and her boss told her to manage the secrets and encrypt the user data with their new End-to-end encryption system. <br>
 > You are Eve and you're hired to break into the system. Alice was so overconfident that she gave you everyone's keys. Can you break their <br>
 > new encryption system and read the chats? <br>
-> :arrow_down: [File](dist/dist.zip)
+> :arrow_down: [File](https://github.com/r3yc0n1c/CTF-Writeups/raw/main/2021/darkCON-2021/Crypto/Risk%20Security%20Analyst%20Alice%20Vs%20Eve/dist/dist.zip)
 
 ## Solution
 
