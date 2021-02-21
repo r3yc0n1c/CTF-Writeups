@@ -99,4 +99,4 @@ decrypt(file, r0)
 ```
 
 ## Flag
-darkCON{user_W4rm4ch1ne68_pass_W4RM4CH1N3R0X_t0ny_h4cked_4g41n!}
+> darkCON{user_W4rm4ch1ne68_pass_W4RM4CH1N3R0X_t0ny_h4cked_4g41n!}
