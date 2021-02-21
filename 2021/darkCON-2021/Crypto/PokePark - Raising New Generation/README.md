@@ -1,4 +1,4 @@
-# PokePark - Raising New Generation Writeup (6 solves / 497 points)
+## PokePark - Raising New Generation Writeup (6 solves / 497 points)
 > nc 3.16.14.62 5000
 
 ### [Solve Script](sol/apex.py)
@@ -90,7 +90,7 @@ next_state = m * last_state + c (mod n)
 
 Now submit the predicted value and get the flag !!! \o/
 
-[![sol](flag.png)](solve.mp4)
+<p align="center"><img src="solve.gif"><br><img src="flag.png"></p>
 
 ## Flag
 > darkCON{P0k3m0ns_4nd_RNG!!!}
