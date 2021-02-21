@@ -1,7 +1,7 @@
 # Tony And James Writeup (45 solves / 472 points)
 > :arrow_down: [Chall FIle](https://github.com/r3yc0n1c/CTF-Writeups/raw/main/2021/darkCON-2021/Crypto/Tony%20And%20James/dist/Tony%20And%20James.zip)
 
-### Source Script
+### [Source Script](dist/src.py)
 ```py
 #!/usr/bin/env python3
 import random
@@ -54,7 +54,7 @@ After generating the seed, we can set the seed and we will obtain the same rando
 ([same seed produces same random numbers](https://stackoverflow.com/questions/22639587/random-seed-what-does-it-do#answer-22639752))
 and then decrypt the flag.
 
-### Solve Script
+### [Solve Script](sol/apex.py)
 ```py
 import random
 
