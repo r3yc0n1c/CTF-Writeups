@@ -1,7 +1,7 @@
 ## Rookie's_Choice_4_you Writeup (51 solves / 467 points)
-> :arrow_down: [Chall File](dist/dist.zip)
+> :arrow_down: [Chall File](https://github.com/r3yc0n1c/CTF-Writeups/raw/main/2021/darkCON-2021/Crypto/Rookie's_Choice_4_you/dist/dist.zip)
 
-### [Source Script](src/src.py)
+### [Source Script](dist/chall.py)
 ```py
 #!/usr/bin/env python3
 from Crypto.Cipher import ARC4	# pip3 install pycryptodome
