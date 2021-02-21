@@ -1,4 +1,4 @@
-# Rookie's_Choice_4_you (51 solves / 467 points)
+## Rookie's_Choice_4_you Writeup (51 solves / 467 points)
 > :arrow_down: [Chall File](dist/dist.zip)
 
 ### [Source Script](src/src.py)
