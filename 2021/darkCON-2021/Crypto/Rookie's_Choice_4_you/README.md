@@ -74,6 +74,9 @@ rec = ''.join( [chr(i ^ j) for i,j in zip(pl,cx)] )
 print(rec)
 ```
 
+## Flag
+> darkCON{RC4_1s_w34k_1f_y0u_us3_s4m3_k3y_tw1c3!!}
+
 ## Ref
 * [RC4 - Wiki](https://en.wikipedia.org/wiki/RC4)
 * [Stream cipher attacks - Wiki](https://en.wikipedia.org/wiki/Stream_cipher_attacks)
