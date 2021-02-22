@@ -57,7 +57,7 @@ current **State[i]** with **m** and then mod **n**.
 ## Predicting The Next State
 ### The Mudulus
 According to this - [Cracking a linear congruential generator](https://security.stackexchange.com/questions/4268/cracking-a-linear-congruential-generator)
-we can recover the mudulus by this method:
+we can recover the modulus by this method:
 
 *To recover m, define t<sub>n</sub> = s<sub>n</sub> + 1 - s<sub>n</sub> and u<sub>n</sub> = |t<sub>n</sub> + 2 * t<sub>n</sub> - t2<sub>n</sub> + 1|;
 then with high probability you will have m = gcd(u1, u2, ..., u10). 10 here is arbitrary; if you make it k, then the probability that this fails is 
