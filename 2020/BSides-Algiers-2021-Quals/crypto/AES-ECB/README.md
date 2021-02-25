@@ -3,7 +3,7 @@
 > `nc chall.bsidesalgiers.com 5002`
 
 ## Sol
-ECB Byte at a Time Attack
+**ECB Byte at a Time Attack**
 
 - [x] Mode Detection - **ECB** (from the chall desc)
 - [x] Block size detection -
