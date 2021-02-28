@@ -86,7 +86,7 @@ def crack(m, a, b, nonce, enc_flag):
 	return flag
 ```
 
-Full Solution Script - [[apex.py]]()
+Full Solution Script - [apex.py](apex.py)
 
 ## Flag
 > ictf{d0n'7_us3_b4d_n0nc3s_k1d5}
