@@ -72,7 +72,7 @@ m = get_mod(nonce)
 a = get_mult(nonce, m)
 b = get_inc(nonce, a, m) 
 ```
-Now we just need to brute-force all the hexchars([0-9a-f]) and get the flag.
+Now we just need to brute-force all the hex digits ( [0-9a-f] ) and get the flag.
 
 ```py
 def crack(m, a, b, nonce, enc_flag):
