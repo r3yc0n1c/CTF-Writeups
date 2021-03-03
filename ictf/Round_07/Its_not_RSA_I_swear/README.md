@@ -1,5 +1,5 @@
-## It's not RSA, I swear!
-
+## It's not RSA, I swear! 
+![badge](https://img.shields.io/badge/Post%20CTF-Writeup-success)
 > I spiced up my not-RSA with randomness! They told me it's secure, so you won't be able <br>
 > to retrieve my super duper secret message... Right? (Thanks to A~Z (Aztro) for this challenge!) <br>
 > Attachments <br>
@@ -9,7 +9,7 @@
 > Points <br>
 > 175
 
-## Solution
+## Solution 
 The Encryption part has some **Linear Congruential Generators(LCG)** stuffs going on as,
 
 <p align="center"><b>
