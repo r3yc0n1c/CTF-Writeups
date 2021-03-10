@@ -149,7 +149,14 @@ After a little bit of googling we can find that
 ```
 Random number generation in Ruby uses Mersenne Twister as a pseudo-random number sequence generator.
 ```
-Now we can assume that `rand()` in ruby might use **mt19937** and already there are tools to crack this.
+Also they gave us a good hint about **rand()**
+```
+Hint for Hangman: Ruby uses mt19937 for its built-in RNG
+
+Ron @ 2021-03-08 08:22
+```
+
+Now we are sure that `rand()` in ruby uses **mt19937** and already there are tools to crack this.
 
 I used this one
 - [Mersenne Twister Predictor](https://github.com/kmyk/mersenne-twister-predictor)
