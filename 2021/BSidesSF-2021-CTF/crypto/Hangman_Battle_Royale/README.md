@@ -149,16 +149,28 @@ After a little bit of googling we can find that
 ```
 Random number generation in Ruby uses Mersenne Twister as a pseudo-random number sequence generator.
 ```
-Now we can assume that `rand()` in ruby might use **mt19937** and already there are tools to crack this. I used this one
+Now we can assume that `rand()` in ruby might use **mt19937** and already there are tools to crack this.
+
+I used this one
 - [Mersenne Twister Predictor](https://github.com/kmyk/mersenne-twister-predictor)
 
 But the main challenge was to predict the next word as the indices of the **words** used in every ROUND seem to be **16 bits** integers.
-Then in the Slack Channel the Author said we can use 
+Here I failed to proceed and then after the CTF in the Slack Channel the Author said we can use 
+
 ```py
 index = predicted_32_bit_int & 0xFFFF
 predicted_WORD = WORDS[index]
 ```
 i.e. the LSB half of the predicted index will match the **original word** index.
+
+So our attack will be like this -
+* Get the names of the players 
+* Calculate the original number back from the indices of the FIRSTNAME (as LSB half) and LASTNAME (as MSB half)
+* Feed the first 624 states to the Predictor (624 is enough to preict the rest)
+* Waste the other states after 624 and the predict the number we need for calculating the index of the word
+* Waste the predictor for every round 
+
+![sol](mt19937.gif)
 
 Full Solution Script - [[apex.py]](apex.py)
 
