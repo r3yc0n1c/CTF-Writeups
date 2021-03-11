@@ -21,7 +21,7 @@ signature  **s'**  together with the correct signature **s** are known to the at
 </p>
 
 ## Implementation
-* Solve Script - [apex.py](apexx.py)
+* Solve Script - [[apex.py]](apex.py)
 
 ## Flag
 > **X-MAS{Oh_CPU_Why_h4th_th0u_fors4k3n_u5_w1th_b3llc0r3__th3_m4th_w45_p3rf3c7!!!_2194142af19aeea4}**
