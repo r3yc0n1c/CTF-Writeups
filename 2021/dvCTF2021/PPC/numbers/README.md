@@ -13,7 +13,7 @@ Now we have to crack this to predict the nest number. I used this - (https://git
 ***
 Solve Script - [[guesser.py]](guesser.py)
 
-Source Script - [[guess.py]](numbers/src/guess.py)
+Source Script - [[guess.py]](src/guess.py)
 ***
 
 ## Flag
