@@ -14,7 +14,7 @@ Then I started reading some papers about this Cryptosystem and lucklily I found 
 which describes LUC very well.
 
 
-### Challenge File - The Prime Generation
+### The Prime Generation
 ```py
 def genPrimes(size):
     base = random.getrandbits(size // 2) << size // 2
@@ -33,10 +33,10 @@ def genPrimes(size):
 
 ```
 At this moment I found that we need to factorize N like in RSA to find the Private Exponent(d) but the Calculation is different. After looking at the `genPrimes()`
-function I thought "Oh! these primes are close! yep Fermat will do the works then" and I got the Factors within a couple of secounds. Then I implemented 
+function I thought "Oh! these primes are close! yep Fermat will do the work then." and I got the Factors within a couple of secounds. Then I implemented 
 the function to calculate **d** from the Paper.
 
-### Challenge File - The Recursion Encryption
+### The Recursion Encryption
 ```py
 def v(n):
     if n == 0:
