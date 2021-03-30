@@ -135,6 +135,9 @@ print(long_to_bytes(m))
 ## Flag
 > UMASS{who_said_we_had_to_multiply_117a1b8a68814dc478ad78bc67d7d7d4}
 
+## Additional Note
+I really recommend you to go through this writeup - [N00bcak's Purple Cave - UMassCTF](https://n00bcak.github.io/writeups/2021/03/27/UMass-CTF.html) as it shares the other approaches (including his own) by some awesome people during the CTF.
+
 ## Ref
 
 - https://en.wikipedia.org/wiki/Lucas_sequence
