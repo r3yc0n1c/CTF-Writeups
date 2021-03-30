@@ -1,0 +1,63 @@
+# Factoring is Fun (500)
+> Factoring is always fun! We're going to play a little game of golf based around factoring. <br>
+> You have 5 minutes to factor a given number, and I'll release more bits of one of the factors throughout the competition until someone solves it! <br>
+> 34.69.184.228 8080 <br>
+> [:arrow_down: factoring_is_fun.txt](factoring_is_fun.txt) <br>
+> Created by Soul#8230
+
+## Solution
+Brute-force the unknown bits (???????? so 2<sup>8</sup> possibilities) and then we get enough High Bits of **p** to use Coppersmith's Attack
+to recover the prime and factor **N**.
+
+```py
+#!/usr/bin/env sage
+
+n = 65392395639337275596081270391096819354474661804712863964174803228992841858059579664991260222236730143708697781583293631412304039511612895022446759574399354404105068964570143051499427138949301578222468365297010445414639795034659463729206198147084082557118272189596989801539070955575137679466124000230812387537
+Bits = 512
+
+p = "10001011000000011010110000101010????????0111100110001001000000001010101000110000101000111011101100100111101011011100100010111101010000001110000001000011100111011101100001111000010100010101010100000101100011101100110100010001000111101001011100000011011010011001111101111101100011110011000001010010110010000010001010110011000010001110111010000100010001010100010101011101010000110001010101111100011011110001111101100110"
+mp = 0
+q = 0
+for i in range(2**8):
+	kbits = Bits - len(p)	# low-order bits of unknown p
+
+	p1, p2 = p.split("????????")
+	mp = p1 + bin(i)[2:].zfill(8) + p2
+	mp = mp + "0"*(kbits)
+	mp = Integer(mp, 2)
+
+	try:
+    
+		PR.<x> = PolynomialRing(Zmod(n))
+		f = x + mp
+		x0 = f.small_roots(X=2^kbits, beta=0.4)[0]
+		mp = mp + x0	# x0 = low bit of p
+		
+		assert n % mp == 0
+		assert is_prime(mp)
+		
+		q = n//Integer(mp)
+
+		break
+	except:
+		pass
+
+	print("[+] Attempt", i)
+
+print()
+print("p = ", mp)
+print("q = ", q)
+
+e = 65537
+phi = (mp-1)*(q-1)
+d = inverse_mod(e, phi)
+
+print("d = ", d)
+```
+
+Solve Script 1: [connect.py](connect.py)
+
+Solve Script 2: [solver.sage](solver.sage)
+
+## Flag
+> UMASS{0n1y_4_f3w_m0r3_y34rs_t1ll_sh0rs}
