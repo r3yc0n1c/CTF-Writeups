@@ -3,7 +3,7 @@ from pwn import *
 import sys
 
 # context.log_level = "DEBUG"
-# p = process(chal)
+# p = process('./chal')
 p = remote("pwn.ctf.ae", 9815)
 
 p.recv()	# prompt
