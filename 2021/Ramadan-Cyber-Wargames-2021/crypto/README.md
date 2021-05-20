@@ -119,7 +119,7 @@ Our main goal is to make the plaintext equal to
 
 `"log in as admin to get the flag1337"`
 
-after decryption but the Oracle doesn't let us encrypt this perticular text as a whole. So, the other way around is to break the plaintext into chunks and encrypt them individually and then join  the ciphertext blocks so that the oracle decrypts them correctly and it matches our target plaintet.
+after decryption but the Oracle doesn't let us encrypt this perticular text as a whole. So, the other way around is to break the plaintext into chunks and encrypt them individually and then join  the ciphertext blocks so that the oracle decrypts them correctly and it matches our target plaintext.
 
 ### Solve Script: [aes_hack.py](aes_hack.py)
 ```py
