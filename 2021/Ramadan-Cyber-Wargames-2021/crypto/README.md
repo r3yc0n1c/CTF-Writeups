@@ -275,7 +275,7 @@ s2 = (s1 * x) mod p <br>
 s3 = (s2 * x) mod p
 </p>
 
-You might have got this! Yes this acts like an [Linear Congruential Generator](https://en.wikipedia.org/wiki/Linear_congruential_generator) ( more precisely, it's like the [Lehmer random number generator](https://en.wikipedia.org/wiki/Lehmer_random_number_generator) version )
+You might have got this! Yes this acts like a [Linear Congruential Generator](https://en.wikipedia.org/wiki/Linear_congruential_generator) ( more precisely, it's like the [Lehmer random number generator](https://en.wikipedia.org/wiki/Lehmer_random_number_generator) version )
 
 and here - 
 
