@@ -14,7 +14,7 @@ https://gchq.github.io/CyberChef/#recipe=From_Base32('A-Z2-7%3D',false)&input=SU
 # Polynomial (100)
 > Polynomials talks, what does it say? <br>
 > Flag format : CTFAE{whatever_the_polynomial_says} <br>
-> :arrow_down: [polynomiay.txt](polynomiay.txt)
+> :arrow_down: [polynomial.txt](polynomial.txt)
 
 ## Solution
 What we have is a simple polynomial which gives us the flag after converting it to the `Integer` form.
