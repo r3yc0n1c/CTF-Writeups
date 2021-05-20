@@ -55,7 +55,7 @@ where **m** is the multiplier and n is the prime modulus. So the next **State[i+
 current **State[i]** with **m** and then mod **n**.
 
 ## Predicting The Next State
-### The Mudulus
+### The Modulus
 According to this - [Cracking a linear congruential generator](https://security.stackexchange.com/questions/4268/cracking-a-linear-congruential-generator)
 we can recover the modulus by this method:
 
