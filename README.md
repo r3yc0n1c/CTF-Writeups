@@ -1,7 +1,10 @@
 # CTF-writeups
 > Author - r3yc0n1c
-
 Writeups of Capture The Flag (CTF) competitions challenges.
+
+## Note: New Blog
+I started a new blog where I can explain stuffs in a much better way.
+Link: https://r3yc0n1c.gitbook.io/writeups/
 
 ## 2020
 - [BSides Algiers 2021 Quals](https://ctftime.org/event/1220)
